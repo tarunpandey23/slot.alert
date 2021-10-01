@@ -134,7 +134,7 @@ form {
 .footer {
   /* height: 11.5rem; */
   height: 195px;
-  width: 100%;
+  width: 100vw;
   background-color: #7f82eb;
   position: relative;
 }
