@@ -1,0 +1,133 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container{
+    
+    background-color: #eef8fd ;
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+    text-align: center;
+    /* height: 100vh; */
+    height: 500px;
+    
+}
+.name{
+    position: absolute;
+    top: 0;
+    left:11rem;
+    color: #8083eb;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.name span{
+    color:#515151 ;
+}
+.leftSide{
+    margin: 0 auto;
+    width: 60%;
+}
+.leftSide h1{
+    color:#515151;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.leftSide h1 span{
+    color:#8083eb;
+    text-transform: capitalize;
+    
+}
+ .buttons{
+    margin-top:2rem;
+}
+.buttons button{
+    height: 1.8rem;
+    width: 8rem;
+    border-radius: 4px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: bold;
+}
+.buttons button a{
+    text-decoration: none;
+    color: white;
+}
+.btn1{
+    background-color:#8083eb;
+    border-color:#8083eb;
+    margin-right: 3rem;
+  
+
+}
+.btn2{
+   background-color:#eef8fd;
+   border-color:#515151;
+   
+}
+.buttons .btn2  a{
+    text-decoration: none;
+    color: #515151;
+
+
+}
+.blank{
+    height: 2rem;
+    width: 100%;
+    background-color: #9a9cef;
+}
+.blank marquee{
+    margin-top:6px;
+    font-weight: bold;
+    color: red;
+    text-transform: capitalize;
+    
+}
+.footer{
+    height: 163px;
+    width: 100%;
+    background-color: #7f82eb;
+    position: relative;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    bottom:25px;
+  
+  }
+  .text p{
+    color: white;
+   margin-left: 35rem;
+   text-transform: capitalize;
+  }
+  .text p i{
+    color: red;
+  }
+.copyright_line{
+  
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+.copyright_line p{
+    color: white;
+    margin-left: 35rem;
+}
+
+.container::before{
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #e4eef3 ;
+    clip-path: circle(22.2% at 0 0);
+
+}
+
+   
