@@ -125,4 +125,4 @@ function postData(name, phoneNum, pinCode, formattedDate){
 
 const form = document.getElementById("registration-form")
 
-form.addEventListener("submit", formValidation)
+form.addEventListener("submit", formValidation);
