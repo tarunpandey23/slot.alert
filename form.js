@@ -83,43 +83,25 @@ function formValidation(e) {
     return false;
   }
 
-  console.log({name, phoneNum, pinCode, date})
+  // console.log({name, phoneNum, pinCode, date})
 
   postData(name, phoneNum, pinCode, date ? formattedDate : '');
   
 }
 
 function postData(name, phoneNum, pinCode, formattedDate){
-  // url=" https://covid-slot-alert.herokuapp.com/";
-//   // data="{name: name }/{phone:phoneNum}/{pin :pinCode}/{date : formattedDate}"
-//   // data="{'name': 'name','phone':'phoneNum','pin':'pinCode','date':'formattedDate' }"
-//   data=[
-//     {
-//     'name':name
-//   },
-//   {
-//     'phone':'phoneNum'
-//   },
-//   {
-//     'pin':"pinCode"
-//   },
-//   {
-//     'date':'formattedDate'
-//   }
-// ]
 
-  // para={
-  //   method:'post',
-  //   headers:{
-  //     'content-type':'application/json'
-  //   },
-  //   body:data
-  // }
   fetch(API_URL + `register/${name}/${phoneNum}/${pinCode}/${formattedDate || ""}`).then((response)=>{
     return response.json()
   }).then((data)=>{
-    console.log(data)
-    if (data.msg.includes("sucess")) window.location.replace("/greeting.html")
+    // console.log(data)
+    if (data.msg.includes("sucess")){
+      window.location.replace("/greeting.html");
+    }else{
+      window.location.replace("message.html");
+    }
+      
+    
   })
 }
 
