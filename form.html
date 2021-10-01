@@ -1,130 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="form.css" />
-    <title>Registration</title>
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="arrow">
-        <a href="index.html"><i class="fa fa-arrow-circle-left"></i></a>
-      </div>
-      <div class="name">
-        <p>slot<span>.alert</span></p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="form.css" />
+  <title>Registration</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="arrow">
+      <a href="index.html"><i class="fa fa-arrow-circle-left"></i></a>
     </div>
-      <!-- <a href="main.html"><i class="fa fa-arrow-left">go back</i></a> -->
-      <div class="formLeft">
-        <div class="forms">
-          <h1>Enter Your <span>Details</span></h1>
-          <form method="GET" id="registration-form">
-            <label class="para" for="name">Name</label>
+    <div class="name">
+      <p>slot<span>.alert</span></p>
+    </div>
+    <!-- <a href="main.html"><i class="fa fa-arrow-left">go back</i></a> -->
+    <div class="formLeft">
+      <div class="forms">
+        <h1>Enter Your <span>Details</span></h1>
+        <form method="GET" id="registration-form">
+          <label class="para" for="name">Name</label>
 
-            <input
-              class="inputTaker"
-              type="text"
-              name="name"
-              id="name"
-              autocomplete="off"
-            />
-            <span class="error" id="namingError"></span><br /><br />
+          <input class="inputTaker" type="text" name="name" id="name" autocomplete="off" />
+          <span class="error" id="namingError"></span><br /><br />
 
-            <label class="para" for="ph_num">phone number</label>
+          <label class="para" for="ph_num">phone number</label>
 
-            <input
-              class="inputTaker"
-              type="phone"
-              name="ph_num"
-              id="ph_num"
-              autocomplete="off"
-            />
-            <span class="error" id="phoneNumError"></span><br /><br />
+          <input class="inputTaker" type="phone" name="ph_num" id="ph_num" autocomplete="off" />
+          <span class="error" id="phoneNumError"></span><br /><br />
 
-            <label class="para" for="pin_code">pin code</label>
+          <label class="para" for="pin_code">pin code</label>
 
-            <input
-              class="inputTaker"
-              type="text"
-              name="pin_code"
-              id="pin_code"
-              autocomplete="off"
-            />
-            <span class="error" id="pinCodeError"></span> <br />
+          <input class="inputTaker" type="text" name="pin_code" id="pin_code" autocomplete="off" />
+          <span class="error" id="pinCodeError"></span> <br />
 
-            <p class="para">date :</p>
-            <br />
-            <div class="radio">
-              <input
-                type="radio"
-                onclick="dateHandler()"
-                id="forDate"
-                name="date"
-                value="select date"
-              />
-              <label for="forDate">Specific day alert</label>
-            </div>
-            <div class="date" id="datediv">
-              <label for="dates">select date:</label>
+          <p class="para">date :</p>
+          <br />
+          <div class="radio">
+            <input type="radio" onclick="dateHandler()" id="forDate" name="date" value="select date" />
+            <label for="forDate">Specific day alert</label>
+          </div>
+          <div class="date" id="datediv">
+            <label for="dates">select date:</label>
 
-               <input
-                class="dateField"
-                type="date"
-                id="dates"
-                name="date"
-                value=""
-               > 
-                
-              
-            </div>
+            <input class="dateField" type="date" id="dates" name="date" value="">
 
-            <div class="radio">
-              <input
-                type="radio"
-                onclick="withOutDateHandler()"
-                id="forNoDate"
-                name="date"
-                value="without date"
-                checked
-              />
-              <label for="forNoDate">Daily alert</label>
-            </div>
-            <br />
-            <div class="btn">
-              <!-- <button class="submits" type="submit">register now</button> -->
-              
-              <input
-                class="submits"
-                type="submit"
-                value="register now"
-                name="submit"
-                
-              />
-            
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="formRight">
-        <img src="images/output2.png" alt="doctor_img " />
+
+          </div>
+
+          <div class="radio">
+            <input type="radio" onclick="withOutDateHandler()" id="forNoDate" name="date" value="without date"
+              checked />
+            <label for="forNoDate">Daily alert</label>
+          </div>
+          <br />
+          <div class="btn">
+            <!-- <button class="submits" type="submit">register now</button> -->
+
+            <input class="submits" type="submit" value="register now" name="submit" />
+
+          </div>
+        </form>
       </div>
     </div>
-
-    <div class="footer">
-      <div class="text">
-        <p>made with  <i class="fa fa-heart"></i> by : tarun & lalit</p>
-      </div>
-      <div class="copyright_line">
-        <!-- <p>copyright(c) all rights reserved</p> -->
-        <p>copyright <i class="fa fa-copyright"> </i> all rights reserved</p>
-      </div>
+    <div class="formRight">
+      <img src="images/output2.png" alt="doctor_img " />
     </div>
-  </body>
-  <script src="form.js"></script>
+  </div>
+
+  <div class="footer">
+    <div class="text">
+      <p>made with <i class="fa fa-heart"></i> by : tarun & lalit</p>
+    </div>
+    <div class="copyright_line">
+      <!-- <p>copyright(c) all rights reserved</p> -->
+      <p>copyright <i class="fa fa-copyright"> </i> all rights reserved</p>
+    </div>
+  </div>
+</body>
+<script src="form.js"></script>
+
 </html>

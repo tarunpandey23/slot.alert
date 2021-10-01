@@ -42,7 +42,7 @@
   flex-direction: row;
   place-items: center;
   /* height: 100vh; */
-  height: 500px;
+  height:100vh;
 }
 .formLeft {
   margin-left:2rem;
