@@ -12,28 +12,51 @@
 
 <body>
     <div class="container">
-        <abbr class="arrow">
+        <div class="arrow">
             <abbr title="Back"><a href="index.html"><i class="fa fa-arrow-circle-left"></i></a></abbr>
-          </div>
+        </div>
         <div class="name">
             <p>slot<span>.alert</span></p>
         </div>
         <div class="box">
         <h1>check your <span>status</span> </h1>
-        <form class="formDiv">
-            <span >phone number </span>
-            
-            <input class="inputBox" type="tel" name="phone_num" id="phone_num" />
-            <input class="btn" type="submit" name="check" id="check" value="check" />
+        <!-- <form class="formDiv" method="GET" id="phoneNumValidation"> -->
+          <form class="formDiv" method="GET" id="validation" >
+            <span >phone number </span><input class="inputBox" type="tel" name="phone_num" id="ph_num" />
+            <span class="error" id="phoneNumError"></span><br /><br />
+            <input class="btn" type="submit" name="check" id="check" value="check"  />
         </form>
-    </div>
-    <div class="dataBox">
 
     </div>
-    <div class="trash">
-       <abbr title="Delete Record"><i class="fa fa-trash"></i></abbr>
+    <div class="render" id="renderField">
+      
     </div>
+    <div  class="hide" id="button">
+      <div class="btnDiv">
+      <input class="btn" type="button" name="reload id="reload" value="check another" onclick="reload()"  />
+      <input class="btn" type="button" name="delete" id="del" value="Delete Record"  onclick="confermDeleteData()"  />
     </div>
+      
+    </div>
+
+    <div class="conferm" id="conButton">
+      <div class="confermDiv">
+        <div class="para"> <p>are you sure want to delete </p></div>
+       <div class="confermBtn">
+        <input class="btn" type="button" name="check" id="yes" value="yes" onclick="deleteData()"  />
+        <input class="btn" type="button" name="check" id="no" value="no"  />
+      </div>
+
+      </div>
+
+    </div>
+    
+    
+
+
+    </div>
+
+
     <footer class="footer">
         <div class="text">
           <p>made with  <i class="fa fa-heart"></i> by : tarun & lalit</p>
@@ -44,5 +67,6 @@
         </div>
       </footer>
 </body>
+<script src="checkStatus.js"></script>
 
 </html>
