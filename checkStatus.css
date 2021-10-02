@@ -85,6 +85,7 @@
   margin-right: 3rem;
   color: white;
   margin-left:.5rem;
+  
 }
 
 .footer{
@@ -122,10 +123,12 @@
     margin-left: 35rem;
 }
 .trash{
+   /* border: 2px solid red; */
+   position: absolute;
+   top:29rem;
+   left:30rem ;
+   display: none;
    
-    position: absolute;
-    top:26rem;
-    left:42rem ;
 }
 .trash i{
     font-size: 2rem;
@@ -149,14 +152,93 @@
   background-color: #e4eef3;
   clip-path: ellipse(22% 40% at 100% 36%);
 }
+.error{
+  color:red;
+  font-weight: bold;
+  text-transform: capitalize;
+ 
+}
 .dataBox{
-    height:10rem;
+    
     width: 42rem;
     position: absolute;
-    bottom: 20rem;
+    bottom: 15rem;
     left: 22rem;
     background-color: #e4eef3;
     /* box-shadow:0px 0px 13px 5px rgb(36,30,30); */
     box-shadow:0px 0px 13px 5px #e5e5e5;
     border-radius: 8px;
 }
+.dataBox table{
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 2px solid #515151;
+  text-align: left;
+  padding: 8px;
+  color: #515151;
+  text-transform: capitalize;
+}
+tr:nth-child(even) {
+  background-color: #9a9cef;
+  
+}
+.data td{
+  color: #e5e5e5;
+}
+
+
+
+
+.hide{
+  
+  
+  display: none;
+
+}
+.btnDiv{
+  height: 3rem;
+  width: 42rem; 
+  position:absolute;
+  bottom: 10rem;
+  left: 22rem;
+  display: flex;
+  justify-content: center;
+
+}
+.conferm{
+  display: none;
+
+}
+.confermDiv{
+  height: 6rem;
+  width: 25rem; 
+  position:absolute;
+  bottom: 6rem;
+  left: 53rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 2px solid red; */
+  place-items: center;
+  z-index: 3;
+  border-radius: 24px;
+  background-color: #e4eef3;
+
+}
+.confermBtn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* border: 2px solid red; */
+  place-items: center;
+  margin-top: 1rem;
+
+}
+.para{
+  color: #7f82eb;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
