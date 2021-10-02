@@ -40,6 +40,8 @@ function phoneCheck(phone) {
           </tr>
         </table>
         <br><br>
+        <input class="btn" type="button" name="reload id="reload" value="check another" onclick="reload()"  />
+      <input class="btn" type="button" name="delete" id="del" value="Delete Record"  onclick="confermDeleteData()"  />
         
         </div> 
 </div>`;
@@ -53,11 +55,11 @@ function phoneCheck(phone) {
     });
 //  var ele=  document.getElementById("button");
 //  ele.classList.remove("hide");
- setTimeout(function(){ 
+//  setTimeout(function(){ 
    
-  var ele=  document.getElementById("button");
- ele.classList.remove("hide"); 
-}, 5000);
+//   var ele=  document.getElementById("button");
+//  ele.classList.remove("hide"); 
+// }, 5000);
 }
 
 function reload() {

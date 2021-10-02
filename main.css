@@ -13,6 +13,7 @@
     text-align: center;
     /* height: 100vh; */
     height: 100vh;
+     
     
 }
 .name{
@@ -34,11 +35,19 @@
     color:#515151;
     font-size: 2.5rem;
     font-weight: bolder;
+    width: 100%;
 }
 .leftSide h1 span{
     color:#8083eb;
     text-transform: capitalize;
     
+}
+.vaccine_img{
+  width: 40%;
+    
+}
+img{
+    width: 100%;
 }
  .buttons{
     margin-top:2rem;
@@ -87,7 +96,7 @@
 }
 .footer{
     height: 163px;
-    width: 100vw;
+    /* width: 100vw; */
     background-color: #7f82eb;
     position: relative;
 }
