@@ -67,8 +67,8 @@ function phoneCheck(phone) {
             </tr>
         </table>
         <br><br>
-        <input class="btn" type="button" name="reload id="reload" value="check another" onclick="reload()"  />
-         <input class="btn" type="button" name="delete" id="del" value="Delete Record"  onclick="confermDeleteData()"  />
+        <input class="btn2" type="button" name="reload id="reload" value="check another" onclick="reload()"  />
+         <input class="btn2" type="button" name="delete" id="del" value="Delete Record"  onclick="confermDeleteData()"  />
         </div> 
 </div>`;
         getData = getData + populateData;

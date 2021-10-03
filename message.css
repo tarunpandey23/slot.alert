@@ -148,7 +148,7 @@
     height: 304px;
     position: absolute;
     top: 6rem;
-    left: 65px;
+    left: 100px;
     z-index: 2;
     background-color: #e4eef3;
     box-shadow: -1px 7px 9px 1px rgb(0 0 0 / 75%);
@@ -180,7 +180,7 @@
   .text {
     position: absolute;
     bottom: 25px;
-    right: 173px;
+    right: 130px;
   }
   .text p {
     width: 15rem;
@@ -188,7 +188,7 @@
   .copyright_line {
     position: absolute;
     bottom: 2px;
-    right: 173px;
+    right: 130px;
   }
   .copyright_line p {
     width: 15rem;

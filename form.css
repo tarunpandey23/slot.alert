@@ -195,7 +195,7 @@ form {
     justify-content: center;
  
     width: 500px;
-    height: 756px;
+    height: 100vh;
     
     flex-direction: column-reverse;
   }
