@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .container{
-    /* border: 1px solid red; */
+    
     display: flex;
     text-align: center;
     justify-content: center;
@@ -90,6 +90,7 @@
     text-transform: capitalize;
     cursor: pointer;
     font-weight: bold;
+    
 }
 .buttons button a{
     text-decoration: none;
@@ -98,7 +99,7 @@
 .btn1{
     background-color:#8083eb;
     border-color:#8083eb;
-    margin-right: 3rem;
+    
   
 
 }

@@ -52,7 +52,7 @@
   font-size: 2.5rem;
   font-weight: bolder;
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  
 }
 .forms h1 span {
   color: #8083eb;
@@ -89,7 +89,6 @@ form {
 }
 .date {
   margin-left: 5rem;
-  /* margin-top: 1rem; */
   color: #515151;
   font-weight: bold;
   display: none;
@@ -105,8 +104,7 @@ form {
   font-weight: bold;
 }
 .btn{
-  margin-top: 1rem;
-  margin-left: 5rem;
+  margin-left: 8rem;
 }
 .submits{
   height: 2rem;
