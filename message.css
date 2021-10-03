@@ -133,7 +133,7 @@
   }
   .container {
     width: 500px;
-    height: 537px;
+    height: 100vh;
     display: flex;
     justify-content: center;
   }
