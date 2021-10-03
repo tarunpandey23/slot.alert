@@ -133,7 +133,7 @@ img {
     left: 8px;
   }
   .container {
-    width: 497px;
+    width: 500px;
     height: 756px;
     display: flex;
     flex-direction: column-reverse;
@@ -204,13 +204,14 @@ img {
     position: absolute;
     right: -100px;
     top: -16px;
+    margin-bottom: 3rem;
   }
   .buttons {
     /* border: 2px solid red; */
     /* border: 2px solid red; */
     position: absolute;
     top: 150px;
-    margin-top: 2rem;
+    margin-top: 1rem;
     right: -25px;
     display: flex;
   }
