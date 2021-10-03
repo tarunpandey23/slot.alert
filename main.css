@@ -209,7 +209,8 @@ img {
     /* border: 2px solid red; */
     /* border: 2px solid red; */
     position: absolute;
-    top: 260px;
+    top: 150px;
+    margin-top: 2rem;
     right: -25px;
     display: flex;
   }
