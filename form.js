@@ -15,12 +15,16 @@ function formValidation(e) {
   const phoneNum = document.getElementById("ph_num").value;
   const pinCode = document.getElementById("pin_code").value;
   const date = document.getElementById("dates").value;
+  // const forDate= document.getElementById("forDate").value;
+
+  const  getSelectedValue = document.querySelector( 'input[name="date"]:checked');   
+ 
 
 
-  if (date) {
-    var formattedDate = date.split("-")[2] + '-' + date.split("-")[1] + '-' + date.split("-")[0];
-    console.log(formattedDate);
-  }
+  // if (date) {
+  //   var formattedDate = date.split("-")[2] + '-' + date.split("-")[1] + '-' + date.split("-")[0];
+  //   console.log(formattedDate);
+  // }
   
 
 
@@ -82,16 +86,38 @@ function formValidation(e) {
       "**please enter your valid pincode number,characters are not allowed";
     return false;
   }
+  if(getSelectedValue == null) {   
+    document.getElementById("radioButtonError").innerHTML="**please select date option"
+    return false;
+  } 
+  if(document.getElementById('forDate').checked == true){
+    if(date==""){
+      document.getElementById("dateError").innerHTML="**please select a specific date";
+      return false;
+    }else{
+      var formattedDate = date.split("-")[2] + '-' + date.split("-")[1] + '-' + date.split("-")[0];
+      console.log(formattedDate);
+      var newDate=formattedDate.toString();
+      console.log(newDate);
+  }
+           
 
-  // console.log({name, phoneNum, pinCode, date})
+  }
+  
+ 
 
-  postData(name, phoneNum, pinCode, date ? formattedDate : '');
+  console.log({name, phoneNum, pinCode, newDate})
+// console.log({name, phoneNum, pinCode, date})
+  // postData(name, phoneNum, pinCode, date ? formattedDate : '');
+  postData(name, phoneNum, pinCode,newDate);
+  
   
 }
 
-function postData(name, phoneNum, pinCode, formattedDate){
+function postData(name, phoneNum, pinCode, newDate){
 
-  fetch(API_URL + `register/${name}/${phoneNum}/${pinCode}/${formattedDate || ""}`).then((response)=>{
+  // fetch(API_URL + `register/${name}/${phoneNum}/${pinCode}/${newDate || ""}`).then((response)=>{
+    fetch(API_URL + `register/${name}/${phoneNum}/${pinCode}/${ newDate || "daily alert"}`).then((response)=>{
     return response.json()
   }).then((data)=>{
     // console.log(data)

@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favIcon/favicon-32x32.png" type="image/gif" >
     <link rel="stylesheet" href="checkStatus.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Check Status</title>
@@ -22,20 +23,21 @@
         <h1>check your <span>status</span> </h1>
         <!-- <form class="formDiv" method="GET" id="phoneNumValidation"> -->
           <form class="formDiv" method="GET" id="validation" >
-            <span >phone number </span><input class="inputBox" type="tel" name="phone_num" id="ph_num" />
-            <span class="error" id="phoneNumError"></span><br /><br />
-            <input class="btn" type="submit" name="check" id="check" value="check"  />
+            <label for="ph_num">phone number</label>
+          <input class="inputBox" type="tel" name="phone_num" id="ph_num" /><br>
+            <span class="error" id="phoneNumError"></span><br><br>
+            <input class="btn" type="submit" name="check" id="check" value="check" onclick="clickHandler()" />
         </form>
 
     </div>
     <div class="render" id="renderField">
+     
+    </div>
+    <div id="error" class="notRegisterError">
+       <span id="error" ></span>
       
     </div>
-    <!-- <div  class="hide" id="button">
-      <div class="btnDiv">
-      <input class="btn" type="button" name="reload id="reload" value="check another" onclick="reload()"  />
-      <input class="btn" type="button" name="delete" id="del" value="Delete Record"  onclick="confermDeleteData()"  />
-    </div> -->
+    
       
     </div>
 
@@ -44,7 +46,7 @@
         <div class="para"> <p>are you sure want to delete </p></div>
        <div class="confermBtn">
         <input class="btn" type="button" name="check" id="yes" value="yes" onclick="deleteData()"  />
-        <input class="btn" type="button" name="check" id="no" value="no"  />
+        <input class="btn" type="button" name="check" id="no" value="no"  onclick="noDeleteData()" />
       </div>
 
       </div>
