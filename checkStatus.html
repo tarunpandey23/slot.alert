@@ -2,64 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="favIcon/favicon-32x32.png" type="image/gif" >
-    <link rel="stylesheet" href="checkStatus.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <title>Check Status</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favIcon/favicon-32x32.png" type="image/gif">
+  <link rel="stylesheet" href="checkStatus.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Check Status</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="arrow">
-            <abbr title="Back"><a href="index.html"><i class="fa fa-arrow-circle-left"></i></a></abbr>
-        </div>
-        <div class="name">
-            <p>slot<span>.alert</span></p>
-        </div>
-        <div class="box">
-        <h1>check your <span>status</span> </h1>
-          <form class="formDiv" method="GET" id="validation" >
-            <label for="ph_num">phone number</label>
-          <input class="inputBox" type="tel" name="phone_num" id="ph_num" placeholder="eg.987****000" /><br>
-            <span class="error" id="phoneNumError"></span><br><br>
-            <input class="btn" type="submit" name="check" id="check" value="check" onclick="clickHandler()" />
-        </form>
-</div>
+  <div class="container">
+    <div class="arrow">
+      <abbr title="Back"><a href="index.html"><i class="fa fa-arrow-circle-left"></i></a></abbr>
+    </div>
+    <div class="name">
+      <p>slot<span>.alert</span></p>
+    </div>
+    <div class="box">
+      <h1>check your <span>status</span> </h1>
+      <form class="formDiv" method="GET" id="validation">
+        <label for="ph_num">phone number</label>
+        <input class="inputBox" type="tel" name="phone_num" id="ph_num" placeholder="eg.987****000" /><br>
+        <span class="error" id="phoneNumError"></span><br><br>
+        <input class="btn" type="submit" name="check" id="check" value="check" onclick="clickHandler()" />
+      </form>
+    </div>
     <div class="render" id="renderField"></div>
     <div id="error" class="notRegisterError">
-       <span id="error" ></span>
+      <span id="error"></span>
+    </div>
+  </div>
+  <div class="conferm" id="conButton">
+    <div class="confermDiv">
+      <div class="para">
+        <p>are you sure want to delete? </p>
+      </div>
+      <div class="confermBtn">
+        <input class="conBtn" type="button" name="check" id="yes" value="yes" onclick="deleteData()" />
+        <input class="conBtn" type="button" name="check" id="no" value="no" onclick="noDeleteData()" />
       </div>
     </div>
-
-    <div class="conferm" id="conButton">
-      <div class="confermDiv">
-        <div class="para"> <p>are you sure want to delete? </p></div>
-       <div class="confermBtn">
-        <input class="conBtn" type="button" name="check" id="yes" value="yes" onclick="deleteData()"  />
-        <input class="conBtn" type="button" name="check" id="no" value="no"  onclick="noDeleteData()" />
-      </div>
-
-      </div>
-
+  </div>
+  </div>
+  <footer class="footer">
+    <div class="text">
+      <p>made with <i class="fa fa-heart"></i> by : tarun & lalit</p>
     </div>
-    
-    
-
-
+    <div class="copyright_line">
+      <p>copyright <i class="fa fa-copyright"> all rights reserved</i></p>
     </div>
-
-
-    <footer class="footer">
-        <div class="text">
-          <p>made with  <i class="fa fa-heart"></i> by : tarun & lalit</p>
-        </div>
-        <div class="copyright_line">
-          <!-- <p>copyright(c) all rights reserved</p> -->
-          <p>copyright <i class="fa fa-copyright"> all rights reserved</i></p>
-        </div>
-      </footer>
+  </footer>
 </body>
 <script src="checkStatus.js"></script>
 
