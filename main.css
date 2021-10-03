@@ -112,8 +112,11 @@ img{
     bottom: 0;
 }
 .copyright_line p{
-    color: white;
+    color: #ffffff;
     margin-left: 35rem;
+}
+.copyright_line p i{
+    color: #515151;
 }
 
 .container::before{
