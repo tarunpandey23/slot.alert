@@ -5,16 +5,12 @@
 }
 
 .container{
-    
     background-color: #eef8fd ;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     place-items: center;
     text-align: center;
-    /* height: 100vh; */
-    height: 100vh;
-     
-    
+    height:500px;    
 }
 .name{
     position: absolute;
@@ -40,16 +36,15 @@
 .leftSide h1 span{
     color:#8083eb;
     text-transform: capitalize;
-    
 }
 .vaccine_img{
   width: 40%;
-    
+  margin-right: 5rem;
 }
 img{
     width: 100%;
 }
- .buttons{
+.buttons{
     margin-top:2rem;
 }
 .buttons button{
@@ -68,19 +63,14 @@ img{
     background-color:#8083eb;
     border-color:#8083eb;
     margin-right: 3rem;
-  
-
 }
 .btn2{
    background-color:#eef8fd;
    border-color:#515151;
-   
 }
 .buttons .btn2  a{
     text-decoration: none;
     color: #515151;
-
-
 }
 .blank{
     height: 2rem;
@@ -96,7 +86,6 @@ img{
 }
 .footer{
     height: 163px;
-    /* width: 100vw; */
     background-color: #7f82eb;
     position: relative;
 }
@@ -106,18 +95,16 @@ img{
     text-align: center;
     position: absolute;
     bottom:25px;
-  
-  }
-  .text p{
+}
+.text p{
     color: white;
    margin-left: 35rem;
    text-transform: capitalize;
-  }
-  .text p i{
+}
+.text p i{
     color: red;
-  }
+}
 .copyright_line{
-  
     display: flex;
     justify-content: center;
     text-align: center;

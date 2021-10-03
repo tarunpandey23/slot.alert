@@ -10,33 +10,31 @@
   <link rel="stylesheet" href="form.css" />
   <title>Registration</title>
 </head>
-
 <body>
   <div class="container">
     <div class="arrow">
-      <a href="index.html"><i class="fa fa-arrow-circle-left"></i></a>
+      <abbr title="Back"><a href="index.html"><i class="fa fa-arrow-circle-left"></i></a></abbr>
     </div>
     <div class="name">
       <p>slot<span>.alert</span></p>
     </div>
-    <!-- <a href="main.html"><i class="fa fa-arrow-left">go back</i></a> -->
     <div class="formLeft">
       <div class="forms">
         <h1>Enter Your <span>Details</span></h1>
         <form method="GET" id="registration-form">
           <label class="para" for="name">Name</label>
 
-          <input class="inputTaker" type="text" name="name" id="name" autocomplete="off" />
+          <input class="inputTaker" type="text" name="name" id="name" autocomplete="off" placeholder="eg.Rakesh"/>
           <span class="error" id="namingError"></span><br /><br />
 
           <label class="para" for="ph_num">phone number</label>
 
-          <input class="inputTaker" type="phone" name="ph_num" id="ph_num" autocomplete="off" />
+          <input class="inputTaker" type="phone" name="ph_num" id="ph_num" autocomplete="off" placeholder="eg.975****000"/>
           <span class="error" id="phoneNumError"></span><br /><br />
 
           <label class="para" for="pin_code">pin code</label>
 
-          <input class="inputTaker" type="text" name="pin_code" id="pin_code" autocomplete="off" />
+          <input class="inputTaker" type="text" name="pin_code" id="pin_code" autocomplete="off" placeholder="eg.2631**" />
           <span class="error" id="pinCodeError"></span> <br />
 
           <p class="para">date :</p>
@@ -50,11 +48,7 @@
 
             <input class="dateField" type="date" id="dates" name="date" ><br>
             <span class="error" id="dateError"></span>
-
-
           </div>
-          
-
           <div class="radio">
             <input type="radio" onclick="withOutDateHandler()" id="forNoDate" name="date" value="without date"
                />
@@ -63,10 +57,7 @@
           <span class="error" id="radioButtonError"></span>
           <br />
           <div class="btn">
-            <!-- <button class="submits" type="submit">register now</button> -->
-
             <input class="submits" type="submit" value="register now" name="submit" />
-
           </div>
         </form>
       </div>
@@ -75,17 +66,14 @@
       <img src="images/output2.png" alt="doctor_img " />
     </div>
   </div>
-
   <div class="footer">
     <div class="text">
       <p>made with <i class="fa fa-heart"></i> by : tarun & lalit</p>
     </div>
     <div class="copyright_line">
-      <!-- <p>copyright(c) all rights reserved</p> -->
       <p>copyright <i class="fa fa-copyright"> </i> all rights reserved</p>
     </div>
   </div>
 </body>
 <script src="form.js"></script>
-
 </html>
