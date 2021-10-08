@@ -41,14 +41,7 @@ function phoneCheck(phone) {
     .then((data) => {
       console.log(data);
       if (data.data.length == 0) {
-        document.getElementById("error").innerHTML =
-          "the number you have entered is not registered, <br> wait a while and  check another registered number <br> thankyou... ";
-          setTimeout(function(){ 
-            window.reload();
-           }, 6000);
-
-
-        
+        window.location.replace("/errorMassege.html");
       } else {
         let elements = data.data[0];
         let populateData = `<div class="dataBox" >
