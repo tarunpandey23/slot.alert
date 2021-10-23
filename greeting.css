@@ -99,9 +99,16 @@
 .btn1{
     background-color:#8083eb;
     border-color:#8083eb;
-    
-  
+    width: 12rem;
+    height: 1.8rem;
+    border-radius: 4px;
+    margin: 0 auto;
+    text-transform: capitalize;
 
+}
+.btn1 a{
+  text-decoration: none;
+  color: white;
 }
 .footer{
     border: 2px sold red;
